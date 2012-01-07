@@ -3,18 +3,18 @@
 %bcond_without	tests	# do not perform "make test"
 
 %define 	module	django-picklefield
-Summary:	django-picklefield provides an implementation of a pickled object field.
-Name:		python-%module
+Summary:	Pickled object field for Django
+Name:		python-%{module}
 Version:	0.1.9
-Release:	0.1
+Release:	1
 License:	MIT
 Group:		Development/Languages
-URL:		http://code.google.com/p/%{module}/
+URL:		http://pypi.python.org/pypi/django-picklefield
 Source0:	http://pypi.python.org/packages/source/d/%{module}/%{module}-%{version}.tar.gz
 # Source0-md5:	4c2bad7ccbd6981ce3515d2e5e23058b
 #BuildRequires:	python-coverage
 #BuildRequires:	python-devel
-BuildRequires:	python-django
+#BuildRequires:	python-django
 #BuildRequires:	python-nose
 #BuildRequires:	python-pyflakes
 #BuildRequires:	python-setuptools
@@ -26,7 +26,8 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-<empty>
+django-picklefield provides an implementation of a pickled object
+field. Such fields can contain any picklable objects.
 
 %prep
 %setup -q -n %{module}-%{version}
