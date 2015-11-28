@@ -6,7 +6,7 @@
 Summary:	Pickled object field for Django
 Name:		python-%{module}
 Version:	0.1.9
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Languages
 URL:		http://pypi.python.org/pypi/django-picklefield
