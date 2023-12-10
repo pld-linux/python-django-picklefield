@@ -6,6 +6,7 @@
 Summary:	Pickled object field for Django
 Summary(pl.UTF-8):	Serializowalne przez pickle pole obiektowe dla Django
 Name:		python-%{module}
+# keep 2.x here for python2/Django 1.11 support
 Version:	2.1.1
 Release:	1
 License:	MIT
@@ -19,7 +20,6 @@ BuildRequires:	python-setuptools
 BuildRequires:	python-django >= 1.11
 %endif
 BuildRequires:	rpmbuild(macros) >= 1.714
-#BuildRequires:	sed >= 4.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
